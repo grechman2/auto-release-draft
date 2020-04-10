@@ -15,5 +15,5 @@ jobs:
           uses: ./
           with: 
               milliseconds: 1000
-        # - name: Print the URL of the release draft
-        #   runt: echo ${{  steps.create-release-draft.outputs.release-url }}       
+        - name: Print the URL of the release draft
+          run: echo ${{  steps.create-release-draft.outputs.release-url }}       
