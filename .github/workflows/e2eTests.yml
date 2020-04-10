@@ -6,16 +6,14 @@ on:
   create:
 jobs:
   test:
-    name: Test
       runs-on: ubuntu-latest
-
       steps:
         - name: Get the sources
           uses: actions/checkout@v1
         - name: Create a release draft for a verion tag
           id: create-release-draft
           uses: ./
-            with: 
+          with: 
               milliseconds: 1000
         # - name: Print the URL of the release draft
         #   runt: echo ${{  steps.create-release-draft.outputs.release-url }}       
