@@ -3,7 +3,7 @@ description: 'Drafts a GitHub release'
 author: 'Name'
 inputs:
   repo-token:
-    description: 'The GITHUB_TOKRN used to authenticate to the current repository',
+    description: 'The GITHUB_TOKEN used to authenticate to the current repository'
     required: true
 outputs:
   release-url:
