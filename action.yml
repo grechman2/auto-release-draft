@@ -1,6 +1,10 @@
 name: 'Your name here'
 description: 'Drafts a GitHub release'
 author: 'Name'
+inputs:
+  repo-token:
+    description: 'The GITHUB_TOKRN used to authenticate to the current repository',
+    required: true
 outputs:
   release-url:
     description: 'The URL of the GitHub release that was drafted'
