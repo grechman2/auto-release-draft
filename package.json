@@ -28,6 +28,8 @@
     "@actions/core": "^1.2.0",
     "@actions/exec": "^1.0.3",
     "@actions/github": "^2.1.1",
+    "@types/jest-when": "^2.7.1",
+    "jest-when": "^2.7.1",
     "semver": "^7.2.2"
   },
   "devDependencies": {
