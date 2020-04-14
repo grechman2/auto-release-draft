@@ -18,8 +18,9 @@ export async function run(): Promise<void> {
       core.debug(`Detected changelog: \n ${changeLog}`)
 
       releaseUrl = await github.createReleaseDraft(tag, token, changeLog)
+      core.debug(`releaseUrl: ${releaseUrl}`)
     }
-    core.setOutput('release-url', releaseUrl)
+    core.setOutput("release-url", releaseUrl)
   } catch (error) {
     core.setFailed(error.message)
   }
